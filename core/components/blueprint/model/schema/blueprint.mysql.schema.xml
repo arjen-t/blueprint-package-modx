@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="blueprint" baseClass="xPDOObject" platform="mysql" defaultEngine="InnoDB" phpdoc-package="blueprint">
+
+</model>

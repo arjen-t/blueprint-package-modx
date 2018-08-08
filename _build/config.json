@@ -1,0 +1,29 @@
+{
+  "name": "BluePrint",
+  "lowCaseName": "blueprint",
+  "description": "A blueprint package for MODX.",
+  "author": "Arjen Trouwborst",
+  "version": "1.0.0",
+  "package": {
+    "menus": [
+    ],
+    "elements": {
+      "plugins": [
+      ]
+    },
+    "systemSettings": [
+    ]
+  },
+  "database": {
+    "tables": [
+    ]
+  },
+  "build": {
+    "resolver": {
+      "after": [
+      ]
+    },
+    "setupOptions": {
+    }
+  }
+}

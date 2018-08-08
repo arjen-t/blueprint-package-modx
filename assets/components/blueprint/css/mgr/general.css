@@ -1,0 +1,23 @@
+ul.general-row-actions {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.general-row-actions li {
+    float: left;
+}
+
+ul.general-row-actions .btn {
+    padding: 2px;
+    margin-right: 2px;
+    min-width: 26px;
+}
+
+ul.general-row-actions .btn.actions-menu {
+    width: 40px;
+}
+
+ul.general-row-actions .btn.actions-menu:after {
+    content: " \f107";
+}
