@@ -8,11 +8,11 @@ $corePath = $modx->getOption('blueprint.core_path', null, $modx->getOption('core
 
 require_once $corePath . 'model/skeleton/skeleton.class.php';
 
-$modx->blueprint = new BluePrint($modx);
+$skeleton = new Skeleton($modx);
 
 $modx->lexicon->load(array('core:default', 'skeleton:default'));
 
-$path = $modx->getOption('processorsPath', $modx->blueprint->config, $corePath . 'processors/');
+$path = $modx->getOption('processorsPath', $skeleton->config, $corePath . 'processors/');
 
 $modx->request->handleRequest(array(
     'processors_path' => $path,
