@@ -1,6 +1,6 @@
-Ext.namespace('blueprint.utils');
+Ext.namespace('skeleton.utils');
 
-BluePrint.utils.getMenu = function (actions, grid, selected) {
+Skeleton.utils.getMenu = function (actions, grid, selected) {
     var menu = [], cls, icon, title, item, has_delete = false;
 
     for (var i in actions) {
@@ -54,7 +54,7 @@ BluePrint.utils.getMenu = function (actions, grid, selected) {
     return menu;
 };
 
-BluePrint.utils.renderActions = function (value, props, row) {
+Skeleton.utils.renderActions = function (value, props, row) {
     var list = [], cls, icon, title, action, item;
 
     for (var i in row.data.actions) {

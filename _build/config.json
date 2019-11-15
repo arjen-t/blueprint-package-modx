@@ -1,9 +1,9 @@
 {
-  "name": "BluePrint",
-  "lowCaseName": "blueprint",
-  "description": "A blueprint package for MODX.",
-  "author": "Arjen Trouwborst",
-  "version": "1.0.0",
+  "name": "Skeleton",
+  "lowCaseName": "skeleton",
+  "description": "A skeleton Extra for MODx.",
+  "author": "Arjen T",
+  "version": "0.0.1",
   "package": {
     "menus": [
     ],

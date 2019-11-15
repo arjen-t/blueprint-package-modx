@@ -1,9 +1,9 @@
-var BluePrint = function (config) {
+var Skeleton = function (config) {
     config = config || {};
 
-    BluePrint.superclass.constructor.call(this, config);
+    Skeleton.superclass.constructor.call(this, config);
 };
-Ext.extend(BluePrint, Ext.Component, {
+Ext.extend(Skeleton, Ext.Component, {
     page: {},
     window: {},
     grid: {},
@@ -16,6 +16,6 @@ Ext.extend(BluePrint, Ext.Component, {
     plugin: {},
     browser: {}
 });
-Ext.reg('blueprint', BluePrint);
+Ext.reg('skeleton', Skeleton);
 
-BluePrint = new BluePrint();
+Skeleton = new Skeleton();

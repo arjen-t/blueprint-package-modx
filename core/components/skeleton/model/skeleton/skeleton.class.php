@@ -1,6 +1,6 @@
 <?php
 
-class BluePrint
+class Skeleton
 {
 
     /**
@@ -14,7 +14,7 @@ class BluePrint
     public $config = array();
 
     /**
-     * BluePrint constructor.
+     * Skeleton constructor.
      * @param modX $modx
      * @param array $config
      */
@@ -22,9 +22,9 @@ class BluePrint
     {
         $this->modx = $modx;
 
-        $corePath = $this->modx->getOption('blueprint.core_path', $config, MODX_CORE_PATH . 'components/blueprint/');
-        $assetsPath = $this->modx->getOption('blueprint.assets_path', null, MODX_ASSETS_PATH . 'components/blueprint/');
-        $assetsUrl = $this->modx->getOption('blueprint.assets_url', $config, MODX_ASSETS_URL . 'components/blueprint/');
+        $corePath = $this->modx->getOption('skeleton.core_path', $config, MODX_CORE_PATH . 'components/skeleton/');
+        $assetsPath = $this->modx->getOption('skeleton.assets_path', null, MODX_ASSETS_PATH . 'components/skeleton/');
+        $assetsUrl = $this->modx->getOption('skeleton.assets_url', $config, MODX_ASSETS_URL . 'components/skeleton/');
 
         $this->config = array_merge(array(
             'corePath' => $corePath,
@@ -44,7 +44,7 @@ class BluePrint
             'connectorUrl' => $assetsUrl . 'connector.php',
         ), $config);
 
-        $this->modx->addPackage('blueprint', $this->config['modelPath']);
+        $this->modx->addPackage('skeleton', $this->config['modelPath']);
     }
 
 }

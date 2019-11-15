@@ -4,13 +4,13 @@ require_once dirname(dirname(dirname(dirname(__FILE__)))) . '/config.core.php';
 require_once MODX_CORE_PATH . 'config/' . MODX_CONFIG_KEY . '.inc.php';
 require_once MODX_CONNECTORS_PATH . 'index.php';
 
-$corePath = $modx->getOption('blueprint.core_path', null, $modx->getOption('core_path') . 'components/blueprint/');
+$corePath = $modx->getOption('blueprint.core_path', null, $modx->getOption('core_path') . 'components/skeleton/');
 
-require_once $corePath . 'model/blueprint/blueprint.class.php';
+require_once $corePath . 'model/skeleton/skeleton.class.php';
 
 $modx->blueprint = new BluePrint($modx);
 
-$modx->lexicon->load(array('core:default', 'blueprint:default'));
+$modx->lexicon->load(array('core:default', 'skeleton:default'));
 
 $path = $modx->getOption('processorsPath', $modx->blueprint->config, $corePath . 'processors/');
 
